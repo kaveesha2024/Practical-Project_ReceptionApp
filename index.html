@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>Room Receptions</title>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <p class="heading">Room Reservation Services</p>
+      <div class="formDiv">
+        <form id="formId">
+         
+          <label for="firstName" class="inputLabel">First Name</label>
+          <input type="text" id="firstName" class="inputTextBox" />
+          
+          <label for="lastName" class="inputLabel">Last Name</label>
+          <input type="text" id="lastName" class="inputTextBox" />
+         
+          <label for="emailAddr" class="inputLabel">Valid Email Address</label>
+          <input type="email" id="emailAddr" class="inputTextBox" />
+         
+          <label for="checkIn" class="inputLabel">Checking Date</label>
+          <input type="date" id="checkIn" class="inputTextBox" />
+          
+          <label for="checkOut" class="inputLabel">Check Out Date</label>
+          <input type="date" id="checkOut" class="inputTextBox" />
+         
+          <label for="contactNumber" class="inputLabel">Contact Number</label>
+          <input type="tel" name="" id="contactNumber" class="inputTextBox" />
+         
+          <button type="submit" class="submitButton" id="addReception">
+            Add Reception
+          </button>
+        </form>
+      </div>
+      <div>
+        <table class="table">
+          <thead>
+            <th class="th">First Name</th>
+            <th class="th">Last Name</th>
+            <th class="th">Email Address</th>
+            <th class="th">Check In Date</th>
+            <th class="th">Check Out Date</th>
+            <th class="th">Contact Number</th>
+            <th class="th">Remove</th>
+          </thead>
+          <tbody id="body"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
